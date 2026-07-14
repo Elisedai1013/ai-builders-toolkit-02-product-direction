@@ -1,8 +1,10 @@
-# AI Builder 导演 Skill
+# AI Builder 导演｜通用 Agent Skill
 
 把一个“能用”的 AI 产品，变成一个**有明确取舍、能被真实用户验证、知道下一步该改什么**的产品。
 
-这个仓库不再只是一组供人复制的提示词，而是一个可安装、可触发的 Codex Skill。你可以把产品想法、页面截图、可点击原型或真实用户测试记录交给它，让 AI 帮你组织判断与证据；最终的产品取舍仍由 Builder 作出。
+这个仓库不再只是一组供人复制的提示词，而是一个基于[开放 Agent Skills 标准](https://agentskills.io/)的 Skill。它不绑定某个模型或产品：任何支持 Agent Skills 的工具都可以加载；不支持自动发现 Skill 的 Agent，也可以直接读取其中的工作流和方法卡。
+
+你可以把产品想法、页面截图、可点击原型或真实用户测试记录交给它，让 AI 帮你组织判断与证据；最终的产品取舍仍由 Builder 作出。
 
 ## 使用它，你可以完成什么
 
@@ -15,41 +17,48 @@
 
 它不会替你虚构用户反馈，也不会替 Builder 决定产品的主心骨。
 
-## 安装
+## 在不同 Agent 中使用
 
-在 Codex 中，可以直接说：
+Skill 的核心目录是 [`skills/ai-builder-director`](skills/ai-builder-director)。复制整个目录，而不只是单独复制 `SKILL.md`，这样 Agent 才能按需读取完整的方法卡。
+
+| 使用环境 | 放置位置或安装方式 | 调用方式 |
+| --- | --- | --- |
+| 支持开放 Agent Skills 的工具 | 项目级通常放在 `.agents/skills/ai-builder-director/` | 直接描述任务或点名 Skill |
+| Claude Code | 个人级 `~/.claude/skills/ai-builder-director/`；项目级 `.claude/skills/ai-builder-director/` | `/ai-builder-director` 或自然语言触发 |
+| OpenAI Codex | 个人级 `~/.codex/skills/ai-builder-director/` | `$ai-builder-director` 或自然语言触发 |
+| 其他 AI Agent | 把整个目录加入 Agent 可读取的上下文，并要求它先读取 `SKILL.md` | 使用下面的自然语言示例 |
+
+在 Codex 中也可以直接说：
 
 ```text
 请使用 $skill-installer 安装这个 Skill：
 https://github.com/Elisedai1013/ai-builders-director-toolkit/tree/main/skills/ai-builder-director
 ```
 
-也可以把 [`skills/ai-builder-director`](skills/ai-builder-director) 目录复制到本机的 `~/.codex/skills/` 下。
-
 ## 怎么使用
 
-安装后，在任务中点名 `$ai-builder-director`。例如：
+安装或加载后，可以直接描述目标，不需要使用 Codex 专属语法。例如：
 
 ```text
-使用 $ai-builder-director 帮我在这两个产品方案之间写出一条真正能指导取舍的主心骨。
+使用 AI Builder 导演 Skill，帮我在这两个产品方案之间写出一条真正能指导取舍的主心骨。
 ```
 
 ```text
-使用 $ai-builder-director，根据这张首页截图帮我准备五秒第一印象测试。不要模拟用户回答。
+使用 AI Builder 导演 Skill，根据这张首页截图帮我准备五秒第一印象测试。不要模拟用户回答。
 ```
 
 ```text
-使用 $ai-builder-director，把这个可点击原型变成一场 30 分钟的用户试用观察，并给我记录表。
+使用 AI Builder 导演 Skill，把这个可点击原型变成一场 30 分钟的用户试用观察，并给我记录表。
 ```
 
 ```text
-使用 $ai-builder-director，整理这 5 位真实用户的测试记录。区分行为、原话和观察者推测，并告诉我下一轮只该验证什么。
+使用 AI Builder 导演 Skill，整理这 5 位真实用户的测试记录。区分行为、原话和观察者推测，并告诉我下一轮只该验证什么。
 ```
 
 你也可以让它带你走完整闭环：
 
 ```text
-使用 $ai-builder-director，从产品主心骨开始，带我完成第一印象测试、用户试用和下一轮迭代设计。
+使用 AI Builder 导演 Skill，从产品主心骨开始，带我完成第一印象测试、用户试用和下一轮迭代设计。
 ```
 
 ## Skill 的工作闭环
@@ -85,7 +94,7 @@ Kim 的核心启发是：当 AI 已经能迅速做出一个“能用”的产品
 ```text
 skills/ai-builder-director/
 ├── SKILL.md                   # Agent 的触发条件、工作流与边界
-├── agents/openai.yaml         # Skill 在 Codex 中的展示信息
+├── agents/openai.yaml         # 可选：Skill 在 Codex 中的展示信息
 └── references/method-cards.md # 三张工具卡的详细模板与提示词
 ```
 
