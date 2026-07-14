@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Builder 导演"
+  short_description: "把产品意图转成明确取舍、真实用户测试证据与下一轮行动"
+  default_prompt: "使用 $ai-builder-director 帮我明确产品主心骨，并设计下一轮用户验证。"
