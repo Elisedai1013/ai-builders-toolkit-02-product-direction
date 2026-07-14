@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="title desc">
+  <title id="title">AI 产品方向验证闭环</title>
+  <desc id="desc">产品主心骨、五秒第一印象测试、用户试用排练和单变量迭代组成循环。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#090909"/>
+      <stop offset="1" stop-color="#17110e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff4f00"/>
+      <stop offset="1" stop-color="#ff8a3d"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="330" rx="28" fill="url(#bg)"/>
+  <path d="M40 2h1120" stroke="url(#accent)" stroke-width="4"/>
+  <text x="54" y="54" fill="#ff6a22" font-family="system-ui,-apple-system,sans-serif" font-size="15" font-weight="700" letter-spacing="3">PRODUCT DIRECTION LOOP</text>
+  <text x="54" y="84" fill="#8f8f8f" font-family="system-ui,-apple-system,sans-serif" font-size="15">每一轮只改变一个最可能影响理解的变量</text>
+
+  <g transform="translate(54 116)">
+    <rect width="238" height="150" rx="18" fill="#151515" stroke="#343434"/>
+    <text x="22" y="35" fill="#ff6420" font-family="system-ui,-apple-system,sans-serif" font-size="15" font-weight="700">01 · DEFINE</text>
+    <text x="22" y="75" fill="#ffffff" font-family="system-ui,-apple-system,sans-serif" font-size="25" font-weight="700">产品主心骨</text>
+    <text x="22" y="108" fill="#a8a8a8" font-family="system-ui,-apple-system,sans-serif" font-size="16">坚持什么，放弃什么</text>
+    <text x="22" y="133" fill="#707070" font-family="system-ui,-apple-system,sans-serif" font-size="14">Builder intent</text>
+  </g>
+  <path d="M302 191h30" stroke="#ff6420" stroke-width="3" stroke-linecap="round"/>
+  <path d="M324 181l10 10-10 10" fill="none" stroke="#ff6420" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(344 116)">
+    <rect width="238" height="150" rx="18" fill="#151515" stroke="#343434"/>
+    <text x="22" y="35" fill="#ff6420" font-family="system-ui,-apple-system,sans-serif" font-size="15" font-weight="700">02 · NOTICE</text>
+    <text x="22" y="75" fill="#ffffff" font-family="system-ui,-apple-system,sans-serif" font-size="25" font-weight="700">五秒测试</text>
+    <text x="22" y="108" fill="#a8a8a8" font-family="system-ui,-apple-system,sans-serif" font-size="16">第一眼是否接收意图</text>
+    <text x="22" y="133" fill="#707070" font-family="system-ui,-apple-system,sans-serif" font-size="14">First impression</text>
+  </g>
+  <path d="M592 191h30" stroke="#ff6420" stroke-width="3" stroke-linecap="round"/>
+  <path d="M614 181l10 10-10 10" fill="none" stroke="#ff6420" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(634 116)">
+    <rect width="238" height="150" rx="18" fill="#151515" stroke="#343434"/>
+    <text x="22" y="35" fill="#ff6420" font-family="system-ui,-apple-system,sans-serif" font-size="15" font-weight="700">03 · REHEARSE</text>
+    <text x="22" y="75" fill="#ffffff" font-family="system-ui,-apple-system,sans-serif" font-size="25" font-weight="700">用户试用</text>
+    <text x="22" y="108" fill="#a8a8a8" font-family="system-ui,-apple-system,sans-serif" font-size="16">记录三个“第一次”</text>
+    <text x="22" y="133" fill="#707070" font-family="system-ui,-apple-system,sans-serif" font-size="14">Real user evidence</text>
+  </g>
+  <path d="M882 191h30" stroke="#ff6420" stroke-width="3" stroke-linecap="round"/>
+  <path d="M904 181l10 10-10 10" fill="none" stroke="#ff6420" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(924 116)">
+    <rect width="222" height="150" rx="18" fill="#1a120e" stroke="#ff6420"/>
+    <circle cx="194" cy="28" r="8" fill="#ff6420" filter="url(#glow)"/>
+    <text x="22" y="35" fill="#ff6420" font-family="system-ui,-apple-system,sans-serif" font-size="15" font-weight="700">04 · ITERATE</text>
+    <text x="22" y="75" fill="#ffffff" font-family="system-ui,-apple-system,sans-serif" font-size="25" font-weight="700">只改一项</text>
+    <text x="22" y="108" fill="#a8a8a8" font-family="system-ui,-apple-system,sans-serif" font-size="16">保留、呈现或原则</text>
+    <text x="22" y="133" fill="#707070" font-family="system-ui,-apple-system,sans-serif" font-size="14">Next round</text>
+  </g>
+
+  <path d="M1036 279c0 25-18 36-44 36H215c-26 0-44-11-44-36" fill="none" stroke="#493027" stroke-width="2" stroke-dasharray="6 8"/>
+  <path d="M162 287l9-10 9 10" fill="none" stroke="#ff6420" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
