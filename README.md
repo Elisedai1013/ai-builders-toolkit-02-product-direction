@@ -93,14 +93,14 @@ Kim 的核心启发是：当 AI 已经能迅速做出一个“能用”的产品
 
 这三个名称和具体模板是「AI Builders 解读 02」为方便实践而整理的编辑性工具，并不是 Kim Beverett 在原演讲中使用的正式名称。
 
-## 关注创作者
+## 关注微信视频号
 
 <p align="center">
-  <img src="assets/ai-builders-02-cover-portrait.jpg" alt="AI Builders 解读 02 竖版封面" width="360">
+  <img src="assets/wechat-channels-elisedai-qr.jpg" alt="微信视频号 Elisedai在创造 二维码" width="320">
 </p>
 
 <p align="center">
-  <strong>微信视频号：Elisedai在创造</strong><br>
+  <strong>扫码关注微信视频号：Elisedai在创造</strong><br>
   持续分享 AI Builders 的一手内容、实践解读与可复用工具。
 </p>
 
