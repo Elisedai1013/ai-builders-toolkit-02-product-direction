@@ -2,6 +2,10 @@
 
 把一个“能用”的 AI 产品，变成一个**有明确取舍、能被真实用户验证、知道下一步该改什么**的产品。
 
+<p align="center">
+  <img src="assets/ai-builders-02-cover-landscape.jpg" alt="AI Builders 解读 02：像导演一样做 AI 产品" width="820">
+</p>
+
 这个仓库不再只是一组供人复制的提示词，而是一个基于[开放 Agent Skills 标准](https://agentskills.io/)的 Skill。它不绑定某个模型或产品：任何支持 Agent Skills 的工具都可以加载；不支持自动发现 Skill 的 Agent，也可以直接读取其中的工作流和方法卡。
 
 你可以把产品想法、页面截图、可点击原型或真实用户测试记录交给它，让 AI 帮你组织判断与证据；最终的产品取舍仍由 Builder 作出。
@@ -89,9 +93,21 @@ Kim 的核心启发是：当 AI 已经能迅速做出一个“能用”的产品
 
 这三个名称和具体模板是「AI Builders 解读 02」为方便实践而整理的编辑性工具，并不是 Kim Beverett 在原演讲中使用的正式名称。
 
+## 关注创作者
+
+<p align="center">
+  <img src="assets/ai-builders-02-cover-portrait.jpg" alt="AI Builders 解读 02 竖版封面" width="360">
+</p>
+
+<p align="center">
+  <strong>微信视频号：Elisedai在创造</strong><br>
+  持续分享 AI Builders 的一手内容、实践解读与可复用工具。
+</p>
+
 ## 仓库结构
 
 ```text
+assets/                            # README 宣传图
 skills/ai-builder-director/
 ├── SKILL.md                   # Agent 的触发条件、工作流与边界
 ├── agents/openai.yaml         # 可选：Skill 在 Codex 中的展示信息
