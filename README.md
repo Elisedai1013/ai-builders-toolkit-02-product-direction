@@ -1,4 +1,4 @@
-# AI Builder 导演｜通用 Agent Skill
+# AI Builders 工具箱 02｜验证 AI 产品方向
 
 把一个“能用”的 AI 产品，变成一个**有明确取舍、能被真实用户验证、知道下一步该改什么**的产品。
 
@@ -23,7 +23,7 @@
 
 ## 在不同 Agent 中使用
 
-Skill 的核心目录是 [`skills/ai-builder-director`](skills/ai-builder-director)。复制整个目录，而不只是单独复制 `SKILL.md`，这样 Agent 才能按需读取完整的方法卡。
+Skill 的核心目录是 [`skills/ai-builder-director`](skills/ai-builder-director)。复制整个目录，而不只是单独复制 `SKILL.md`，这样 Agent 才能按需读取完整的方法卡。为避免破坏已安装版本，Skill 内部调用名仍保留为 `ai-builder-director`；仓库名和展示标题则按它的实际用途命名。
 
 | 使用环境 | 放置位置或安装方式 | 调用方式 |
 | --- | --- | --- |
@@ -36,7 +36,7 @@ Skill 的核心目录是 [`skills/ai-builder-director`](skills/ai-builder-direct
 
 ```text
 请使用 $skill-installer 安装这个 Skill：
-https://github.com/Elisedai1013/ai-builders-director-toolkit/tree/main/skills/ai-builder-director
+https://github.com/Elisedai1013/ai-builders-toolkit-02-product-direction/tree/main/skills/ai-builder-director
 ```
 
 ## 怎么使用
@@ -44,25 +44,25 @@ https://github.com/Elisedai1013/ai-builders-director-toolkit/tree/main/skills/ai
 安装或加载后，可以直接描述目标，不需要使用 Codex 专属语法。例如：
 
 ```text
-使用 AI Builder 导演 Skill，帮我在这两个产品方案之间写出一条真正能指导取舍的主心骨。
+使用 AI 产品方向验证 Skill，帮我在这两个产品方案之间写出一条真正能指导取舍的主心骨。
 ```
 
 ```text
-使用 AI Builder 导演 Skill，根据这张首页截图帮我准备五秒第一印象测试。不要模拟用户回答。
+使用 AI 产品方向验证 Skill，根据这张首页截图帮我准备五秒第一印象测试。不要模拟用户回答。
 ```
 
 ```text
-使用 AI Builder 导演 Skill，把这个可点击原型变成一场 30 分钟的用户试用观察，并给我记录表。
+使用 AI 产品方向验证 Skill，把这个可点击原型变成一场 30 分钟的用户试用观察，并给我记录表。
 ```
 
 ```text
-使用 AI Builder 导演 Skill，整理这 5 位真实用户的测试记录。区分行为、原话和观察者推测，并告诉我下一轮只该验证什么。
+使用 AI 产品方向验证 Skill，整理这 5 位真实用户的测试记录。区分行为、原话和观察者推测，并告诉我下一轮只该验证什么。
 ```
 
 你也可以让它带你走完整闭环：
 
 ```text
-使用 AI Builder 导演 Skill，从产品主心骨开始，带我完成第一印象测试、用户试用和下一轮迭代设计。
+使用 AI 产品方向验证 Skill，从产品主心骨开始，带我完成第一印象测试、用户试用和下一轮迭代设计。
 ```
 
 ## Skill 的工作闭环
