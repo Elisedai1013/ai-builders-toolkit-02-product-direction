@@ -14,6 +14,10 @@
   <a href="skills/ai-builder-director/references/method-cards.md">打开完整方法卡</a>
 </p>
 
+<p align="center">
+  <strong><a href="#关注微信视频号">关注微信视频号：Elisedai在创造</a></strong>
+</p>
+
 这个仓库不再只是一组供人复制的提示词，而是一个基于[开放 Agent Skills 标准](https://agentskills.io/)的 Skill。它不绑定某个模型或产品：任何支持 Agent Skills 的工具都可以加载；不支持自动发现 Skill 的 Agent，也可以直接读取其中的工作流和方法卡。
 
 你可以把产品想法、页面截图、可点击原型或真实用户测试记录交给它，让 AI 帮你组织判断与证据；最终的产品取舍仍由 Builder 作出。
